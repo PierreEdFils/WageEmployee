@@ -1,9 +1,14 @@
 
 public class Employee {
-    public int baseSalary;
+    private int baseSalary;
     private int hourlyRate;
 
-    public  int calculateWage( int extraHours) {
+    public Employee(int baseSalary, int hourlyRate) {
+        this.baseSalary = baseSalary;
+        this.hourlyRate = hourlyRate;
+    }
+
+    public  int calculateWage(int extraHours) {
         return baseSalary + (extraHours* getHourlyRate());
     }
      public void setBaseSalary(int baseSalary){
