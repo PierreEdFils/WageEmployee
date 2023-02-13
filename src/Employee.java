@@ -3,7 +3,10 @@ public class Employee {
     private int baseSalary;
     private int hourlyRate;
 
-    public Employee(int baseSalary, int hourlyRate) {
+    public Employee(int baseSalary) {
+        this(baseSalary,0);
+        this.hourlyRate = 0;
+    } public Employee(int baseSalary, int hourlyRate) {
         this.baseSalary = baseSalary;
         this.hourlyRate = hourlyRate;
     }
@@ -28,7 +31,7 @@ public class Employee {
     }
 
     public void setHourlyRate(int hourlyRate) {
-        if (hourlyRate <= 0)
+        if (hourlyRate < 0)
             throw  new IllegalArgumentException("hourly rate  cannot be 0 or negative ");
         this.hourlyRate = hourlyRate;
     }
