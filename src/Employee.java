@@ -16,7 +16,7 @@ public class Employee {
         return baseSalary;
     }
 
-    public int getHourlyRate() {
+    private int getHourlyRate() {
         return hourlyRate;
     }
 
