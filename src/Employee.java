@@ -10,6 +10,8 @@ public class Employee {
 
     public  int calculateWage(int extraHours) {
         return baseSalary + (extraHours* getHourlyRate());
+    } public  int calculateWage() {
+        return calculateWage(0) ;
     }
      public void setBaseSalary(int baseSalary){
         if (baseSalary <= 0)

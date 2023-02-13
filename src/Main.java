@@ -5,7 +5,7 @@ public class Main {
 //        employee.setBaseSalary(50_000);
 //        employee.setHourlyRate(20);
 //        System.out.println(employee.baseSalary);
-        int wage =employee.calculateWage(10 );
+        int wage =employee.calculateWage();
         System.out.println(wage);
 
 //        var browser = new Browser();
